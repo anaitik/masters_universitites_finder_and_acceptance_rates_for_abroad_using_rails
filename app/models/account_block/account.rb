@@ -1,5 +1,5 @@
 module AccountBlock
-    class Account < AccountBlock::ApplicationRecord
+    class Account < ApplicationRecord
       self.table_name = :accounts
     end 
 end
