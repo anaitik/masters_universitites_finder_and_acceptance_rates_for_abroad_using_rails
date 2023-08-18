@@ -1,5 +1,5 @@
 ActiveAdmin.register AccountBlock::Account, as: "User Account" do
-  permit_params :email, :password, :activated, :customer_code, :first_name
+  permit_params :email, :password, :role, :customer_code, :first_name
   
 
 
@@ -8,7 +8,7 @@ ActiveAdmin.register AccountBlock::Account, as: "User Account" do
     column :id
     column "Name", :first_name
     column :email
-    column :activated
+    column :role
    
     actions
   end
@@ -19,14 +19,14 @@ ActiveAdmin.register AccountBlock::Account, as: "User Account" do
       row :id
       row :first_name, label: "Name"
       row :email
-      row :activated
+      row :role
       
     end
   end
 
 
   filter :email
-  filter :activated, as: :select, collection: [["Yes", true], ["No", false]]
+  
 
 
   form do |f|
@@ -34,7 +34,8 @@ ActiveAdmin.register AccountBlock::Account, as: "User Account" do
       f.input :first_name, label: "Name"
       f.input :email
       f.input :password
-      f.input :activated
+      f.input :role
+
       
     end
     f.actions
