@@ -1,2 +1,4 @@
-class BxBlockRequest::RepliesController < ApplicationController
+module BxBlockRequest
+    class RepliesController < ApplicationController
+    end
 end
