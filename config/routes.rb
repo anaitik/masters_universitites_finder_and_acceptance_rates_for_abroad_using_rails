@@ -13,5 +13,7 @@ Rails.application.routes.draw do
   namespace :bx_block_contact do
     resource :contact
   end
-  
+  namespace :bx_block_profile do
+    resources :profiles, only: [:create, :index, :update, :show]
+  end
 end
