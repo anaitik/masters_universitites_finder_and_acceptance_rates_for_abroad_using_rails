@@ -13,5 +13,11 @@ Rails.application.routes.draw do
   namespace :bx_block_contact do
     resource :contact
   end
+  resources :tests do
+    resources :questions
+  end
+  resources :questions, only: [] do
+    resources :answers
+  end
   
 end
