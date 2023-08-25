@@ -29,7 +29,17 @@ Rails.application.routes.draw do
   namespace :bx_block_answer do
     resources :answers
   end
+
   namespace :bx_block_test do
     resources :tests
   end
+
+ 
+  namespace :bx_block_query do
+    resources :queries
+  end
+  namespace :bx_block_reply do
+    resources :replies
+  end
+
 end
