@@ -22,11 +22,14 @@ Rails.application.routes.draw do
     resources :events
   end
 
-  resources :tests do
+  namespace :bx_block_question do
     resources :questions
   end
   
-  resources :questions, only: [] do
+  namespace :bx_block_answer do
     resources :answers
+  end
+  namespace :bx_block_test do
+    resources :tests
   end
 end
