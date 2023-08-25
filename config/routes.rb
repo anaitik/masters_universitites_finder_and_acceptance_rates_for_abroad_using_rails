@@ -13,11 +13,20 @@ Rails.application.routes.draw do
   namespace :bx_block_contact do
     resource :contact
   end
+  namespace :bx_block_profile do
+    resources :profiles, only: [:create, :index, :update, :show]
+    resources :updates
+  end
+  
+  namespace :bx_block_event do
+    resources :events
+  end
+
   resources :tests do
     resources :questions
   end
+  
   resources :questions, only: [] do
     resources :answers
   end
-  
 end
