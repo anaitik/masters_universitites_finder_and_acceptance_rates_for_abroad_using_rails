@@ -9,5 +9,9 @@ Rails.application.routes.draw do
   namespace :bx_block_login do
     resource :login, only: [:create]
   end
+
+  namespace :bx_block_contact do
+    resource :contact
+  end
   
 end
