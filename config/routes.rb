@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
+
   ActiveAdmin.routes(self)
 
   post '/bx_block_calculate_gpa/calculate_gpa', to: 'bx_block_calculate_gpa/calculate_gpa#calculate_gpa'
@@ -17,7 +18,9 @@ Rails.application.routes.draw do
     resources :profiles, only: [:create, :index, :update, :show]
     resources :updates
   end
-  
+  namespace :bx_block_courses do
+    resources :courses, only: [:index, :show]
+  end
   namespace :bx_block_event do
     resources :events
   end
