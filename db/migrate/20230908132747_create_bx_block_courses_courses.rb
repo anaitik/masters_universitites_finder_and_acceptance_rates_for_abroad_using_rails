@@ -3,7 +3,6 @@ class CreateBxBlockCoursesCourses < ActiveRecord::Migration[7.0]
     create_table :courses do |t|
       t.string :title
       t.string :link
-      t.text :description
 
 
       t.timestamps
