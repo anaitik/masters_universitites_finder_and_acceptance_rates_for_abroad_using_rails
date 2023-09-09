@@ -1,4 +1,4 @@
-module BxBlockCourses
+module BxBlockCourse
 	class CoursesController < ApplicationController
 	def index
       @courses = Course.all

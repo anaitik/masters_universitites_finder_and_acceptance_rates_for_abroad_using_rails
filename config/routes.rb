@@ -18,7 +18,7 @@ Rails.application.routes.draw do
     resources :profiles, only: [:create, :index, :update, :show]
     resources :updates
   end
-  namespace :bx_block_courses do
+  namespace :bx_block_course do
     resources :courses, only: [:index, :show]
   end
   namespace :bx_block_event do

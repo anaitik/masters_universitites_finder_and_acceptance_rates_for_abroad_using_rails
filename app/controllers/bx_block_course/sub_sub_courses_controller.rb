@@ -1,4 +1,4 @@
-module BxBlockCourses
+module BxBlockCourse
 	class SubSubCoursesController < ApplicationController
 	end
 end
