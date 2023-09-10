@@ -5,6 +5,7 @@ ActiveAdmin.register BxBlockTest::Test,as:"Test" do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
+  menu priority: 1, label: 'Create Test', parent: 'Test Question & Answers' 
   permit_params :title
   #
   # or

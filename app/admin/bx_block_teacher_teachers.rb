@@ -5,6 +5,7 @@ ActiveAdmin.register BxBlockTeacher::Teacher,as: "Teacher" do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
+  menu priority: 1, label: 'Teachers', parent: 'Students & Teacher Info'
   permit_params :name, :full_phone_number, :address
   #
   # or

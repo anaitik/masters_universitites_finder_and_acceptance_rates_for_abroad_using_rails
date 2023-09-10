@@ -5,6 +5,7 @@ ActiveAdmin.register BxBlockReply::Reply,as:"Reply" do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
+  menu priority: 2, label: 'Replies', parent: 'Queries & Replies'
   permit_params :content, :query_id
   #
   # or

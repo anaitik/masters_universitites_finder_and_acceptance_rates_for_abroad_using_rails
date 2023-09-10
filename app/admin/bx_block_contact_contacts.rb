@@ -5,6 +5,7 @@ ActiveAdmin.register BxBlockContact::Contact,as: "Contact" do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
+  menu priority: 3, label: 'Student Contact Details', parent: 'Students & Teacher Info'
   permit_params :firstName, :lastName, :phoneNumber, :emailAddress
   #
   # or

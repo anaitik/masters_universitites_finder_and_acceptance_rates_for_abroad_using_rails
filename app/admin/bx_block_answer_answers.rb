@@ -5,6 +5,7 @@ ActiveAdmin.register BxBlockAnswer::Answer,as:"Answer" do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
+  menu priority: 3, label: 'Answers', parent: 'Test Question & Answers' 
   permit_params :content, :question_id
   #
   # or

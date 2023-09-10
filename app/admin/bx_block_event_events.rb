@@ -5,6 +5,7 @@ ActiveAdmin.register BxBlockEvent::Event, as: "Event"do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
+  menu priority: 1, label: 'Group Classes', parent: 'Group events'
   permit_params :link, :name, :event_date, :event_time, :description, :image
   #
   # or
