@@ -4,6 +4,7 @@ class CreateBxBlockCoursesCourses < ActiveRecord::Migration[7.0]
       t.string :title
       t.string :link
 
+
       t.timestamps
     end
   end
